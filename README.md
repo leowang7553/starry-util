@@ -4,7 +4,7 @@
 
 ## link
 
-* npm-url: [npm]()
+* npm-url: [npm](https://www.npmjs.com/package/starry-util)
 * git-url: [github](https://github.com/leowang7553/starry-util)
 
 ## Installation
