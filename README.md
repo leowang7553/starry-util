@@ -5,7 +5,7 @@
 ## link
 
 * npm-url: [npm]()
-* git-url: [github]()
+* git-url: [github](https://github.com/leowang7553/starry-util)
 
 ## Installation
 
