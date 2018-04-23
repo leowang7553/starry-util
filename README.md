@@ -136,3 +136,4 @@ Starry.removeItemByIndex(-2, [1,2,3]) //return [1,3]
 
 ## Other
 * jest (you can use jest to test the code)
+* es5 code in es5 folder
