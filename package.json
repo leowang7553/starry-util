@@ -19,6 +19,10 @@
   ],
   "author": "leo",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leowang7553/starry-util"
+  }
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.1",
