@@ -1,6 +1,24 @@
-# 打造自己的库 V0.0.1
+# starry-util
 
-**注意**：
+* a wrapper utility function package
+
+## link
+
+* npm-url: [npm]()
+* git-url: [github]()
+
+## Installation
+
+You can install with npm:
+
+```
+$ npm install starry-util
+```
+
+## Usage
+
+```
+import 
 
 * `npm run test` 可以跑测试
 * code coverage 90% 以上
