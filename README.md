@@ -1,6 +1,6 @@
 # starry-util
 
-* a wrapper utility function package
+* a wrapper common utility function package
 
 ## link
 
