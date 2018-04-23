@@ -1,4 +1,4 @@
-let Util = {}
+let Starry = {}
 /**
  * 获取指定的 querystring 中指定 name 的 value
  * @param {String} name
@@ -104,8 +104,10 @@ function insertAfter (node, target) {
   }
   if (target.nextElementSibling) {
   	target.parentNode.insertBefore(node, target.nextElementSibling)
+    return target
   } else {
   	target.parentNode.appendChild(node)
+    return target
   }
 }
 
@@ -122,9 +124,11 @@ function addClass (node, className) {
   }
   if (Object.prototype.toString.call(className) === '[object String]') {
   	node.classList.add(className)
+    return node
   } else if (Object.prototype.toString.call(className) === '[object Array]') {
   	className.forEach((item) => {
   		node.classList.add(item)
+      return node
   	})
   } else {
   	return className
@@ -144,9 +148,11 @@ function removeClass (node, className) {
   }
   if (Object.prototype.toString.call(className) === '[object String]') {
   	node.classList.remove(className)
+    return node
   } else if (Object.prototype.toString.call(className) === '[object Array]') {
   	className.forEach((item) => {
   		node.classList.remove(item)
+      return node
   	})
   } else {
   	return className
@@ -348,7 +354,7 @@ function areaRandom (min, max) {
 }
 
 // interface
-Util = {
+Starry = {
   query: query,
   serialize: serialize,
   $: $,
@@ -366,4 +372,4 @@ Util = {
   areaRandom: areaRandom
 }
 
-module.exports = Util
+module.exports = Starry
