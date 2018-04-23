@@ -46,6 +46,7 @@ describe('test $()', () => {
     expect(Starry.$('#test').nodeName.toLowerCase()).toBe('div')
     expect(Starry.$('.test-class')[0].nodeName.toLowerCase()).toBe('span')
     expect(Starry.$('.test-class')[1].nodeName.toLowerCase()).toBe('a')
+    expect(Starry.$('a')[0].nodeName.toLowerCase()).toBe('a')
   })
   test('illegal input', () => {
     expect(Starry.$()).toBe(undefined)
