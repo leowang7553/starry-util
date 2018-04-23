@@ -1,6 +1,6 @@
 {
   "name": "starry-util",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "工具库 util",
   "scripts": {
     "test": "npx jest",
