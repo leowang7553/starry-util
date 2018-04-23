@@ -128,13 +128,13 @@ Starry.removeItemByIndex(-2, [1,2,3]) //return [1,3]
  ### transformNumToThousandth(num)
  - Function for tranform a number to be a number in thousandth
  ```
- Starry.transformNumToThousandth(123456) //return 123,456
+ Starry.transformNumToThousandth(123456) //return '123,456'
  ```
  
  ### areaRandom(min, max)
  - Function for generate a random number (min <= number <= max)
  ```
- Starry.areaRandom(0, 10) //return a random number
+ Starry.areaRandom(0, 10) //return a random number between 0 and 10
  ```
 
 ## Other
