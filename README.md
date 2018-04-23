@@ -18,20 +18,119 @@ $ npm install starry-util
 ## Usage
 
 ```
-import 
+import Starry from 'Starry-util'
+```
 
-* `npm run test` 可以跑测试
-* code coverage 90% 以上
-* `npm run coverage` 跑测试并告知 coverage 的结果
+## Function
 
-**加分项**：
+### query(name, querystring)
+- Function for gets the value of the specified name in the specified querystring
+```
+Starry.query('hello', '?hello=hi') //return 'hi'
+```
+<br>
 
-1. 使用 ES6 ，并且编译出一份 ES5 的文件
-2. 遵从 ESLint 或者 standardjs 等代码规范
-3. 函数多多益善
-4. [发布到 npm](https://github.com/muwenzi/Program-Blog/issues/12) ，发布后把链接贴到你的总结里
-5. 测试文件统一归到 `test` 目录下
-6. code coverage 不小于 95%
-7. 使用 git hook 来自动跑用例和代码覆盖率
-   * [自定义 Git - Git 钩子](https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90)
-   * [husky](https://github.com/typicode/husky)
+### serialize(data)
+- Function for turn the object into a url string
+```
+Starry.serialize({hello: 'js'}) //return 'hello=js'
+```
+<br>
+
+### $(selector)
+- Function for according to css selector to find DOM (similar to jquery)
+```
+Starry.$(selector) //return {Dom}
+```
+<br>
+
+### removeNode(node)
+- Function for Deleting DOM node
+```
+Starry.removeNode(node) //return removed node
+```
+<br>
+
+### insertAfter(node, target)
+- Function for inserting the node after the target node
+```
+Starry.insertAfter(node, target) //return modified target 
+```
+<br>
+
+### addClass(node, className)
+- Function for add class name to the node 
+```
+Starry.addClass(node, className) //return modified node
+```
+<br>
+
+### removeClass(node, className)
+- Function for remove class name from the node
+- return undefined
+```
+Starry.removeClass(node, className) //return modified node
+```
+<br>
+
+### getAbsoluteUrl(url)
+- Function for get absolute url
+- Return url
+```
+Starry.getAbsoluteUrl('/hhh') //return 'https://github.com/hhh'
+```
+<br>
+
+### debounce(callback, time)
+- Function for avoiding shake
+- Click [here](http://coding.imweb.io/demo/p8/debounce.html) if you want to see the debounce effect
+- Example
+```
+window.addEventListener('scroll', () => { // 普通事件
+    console.log('default')
+})
+
+var debounce = Starry.debounce(() => { // 创建一个 debounce
+    console.log('debounce')
+}, 400)
+window.addEventListener('scroll', debounce) // debounce 事件
+```
+
+### removeItemByIndex(index, arr)
+- Function for remove a item from the array
+- Index can also be negative (it will remove the item from tail)
+```
+Starry.removeItemByIndex(-2, [1,2,3]) //return [1,3]
+```
+
+### judgeType(variable)
+ - Function for judge the type of a variable or a function
+ ```
+ Starry.judgeType([1]) //return 'array'
+ ```
+ 
+ ### clone(obj)
+ - Function for clone a variable
+ - It will deep copy a object or a array
+ ```
+ Starry.clone({a:{b:1}}) //return {a:{b:1}}
+ ```
+ 
+ ### uniqueArray(arr)
+ - Function for unque a array
+ ```
+ Starry.uniqueArray([1,2,2,3]) // return [1,2,3]
+ ```
+ 
+ ### transformNumToThousandth(num)
+ - Function for tranform a number to be a number in thousandth
+ ```
+ Starry.transformNumToThousandth(123456) //return 123,456
+ ```
+ 
+ ### areaRandom(min, max)
+ - Function for generate a random number (min <= number <= max)
+ ```
+ Starry.areaRandom(0, 10) //return a random number
+ ```
+
