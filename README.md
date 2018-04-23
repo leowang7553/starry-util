@@ -16,7 +16,10 @@ $ npm install starry-util
 ```
 
 ## Usage
-
+```
+const Starry = require('Starry-util')
+```
+or
 ```
 import Starry from 'Starry-util'
 ```
