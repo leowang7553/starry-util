@@ -134,3 +134,5 @@ Starry.removeItemByIndex(-2, [1,2,3]) //return [1,3]
  Starry.areaRandom(0, 10) //return a random number
  ```
 
+## Other
+* jest (you can use jest to test the code)
